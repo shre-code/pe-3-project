@@ -1,0 +1,12 @@
+Implementing an alexa skill that provides study tips using aws Lambda and DynamoDB
+
+Navigate to your Lambda console and click create function.
+select "Author From scratch" button on the top right.
+On the “Configure triggers” page, click on box with dotted outline, and select “Alexa Skills Kit” from the dropdown menu
+Under Basic Information section, add a Name and Description. Then in Runtime dropdown select “Python”.
+
+5.Under the Lambda function handle and role section, select “Choose an existing role” under role and select the IAM role that you created in Part 2 of this series.
+6.Create a table in DynamoDB and connect the dynamo db table to the lambda.
+7.Click “Next” and finally the orange “Create function” button on the Review page
+8.Now click into your new lambda function. On the top right corner you should see a “ARN”, this stands for Amazon Resource Name. Copy this Resource Name (looks like arn:aws:lambda:us-east-1:3513311...) , this will be needed later.
+
